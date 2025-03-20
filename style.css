@@ -106,147 +106,48 @@ p{
     padding-bottom: 0.2rem;
 }
 
-/* ------- Home Section ------------------------------------------------------------------------*/
-.hero {
-    position: relative;
-    margin-top: 4.7rem;
-    width: 100vw;
-    height: calc(100vh - 4.5rem);
-    background: url('Images/Landing\ page.png') lightgray -130.393px -1961.419px / 127.287% 439.355% no-repeat;
-    display: block;
-    overflow: hidden;
-    padding-bottom: 2rem;
- }
- 
- .scroll {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
- }
- 
- .background-rectangles {
-    padding-top: 1.4rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-    width: calc(100% * 2);
-    animation: scroll-background 50s linear infinite;
- }
- 
- .background-rectangles div {
-    width: 18rem;
-    height: 12.1rem;
-    background-color: var(--grey);
-    border-radius: 1.2rem;
-    padding: 0px;
-    border: 1.5px solid #000;
- }
- 
- .background-rectangles img {
-    width: 100%;
-    border-radius: 1rem;
- }
- 
- @keyframes scroll-background {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
- }
+@media (max-width: 600px){
+    h1{
+        font-size: 30pt;
+        font-family: 'Giphurs Bold';
+    }
+    .header{
+        padding-top: 0.9rem;
+        padding-left: 1.1rem;
+        padding-right: 0.9rem;
+        padding-bottom: 0.6rem;
+        font-weight: 400;
+        z-index: 1000;
+    }
 
-.about{
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    .logo img{
+        width: 2rem;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+
+    #nav1 ul li a {
+        font-size: 8pt;
+        font-family: 'Giphurs Regular';
+    }
+
+    #nav1 ul li {
+        margin: 0rem;
+        margin-right: 0.5rem; 
+        padding-bottom: 1rem;
+    }
+
+    #nav1 ul li a.active {
+        border-bottom: 0.1rem solid var(--white); 
+        padding-bottom: 0.1rem;
+    }
+
+    #nav1 ul li a:hover {
+        border-bottom: 0.1rem solid var(--white); 
+        padding-bottom: 0.1rem;
+    }
 }
 
-.about p {
-    column-count: 2;
-    column-gap: 2rem; 
-}
-   
-.services {
-    width: 100vw;
-    padding-top: 4rem;
-    padding-left: 4.5rem;
-    padding-bottom: 3.5rem;
-    padding-right: 2.5rem;
-    background: var(--black);
-}
-
-.services h1{
-    color: var(--white);
-}
-
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.service {
-    background: white;
-    width: 28vw; 
-    flex-shrink: auto; 
-    scroll-snap-align: start; 
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    border-radius: 15px;
-    height: fit-content;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-}
-
-.portfolio {
-    width: 100vw;
-    padding-top: 4rem;
-    padding-left: 4.5rem;
-    padding-bottom: 3rem;
- }
- 
- .works {
-    width: 100vw;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    padding-bottom: 10px;
-    align-items: left;
-    gap: 3rem;
-    padding-right: 3rem;
- }
- 
- .work {
-    background: white;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    flex-shrink: auto; 
-    scroll-snap-align: start;
- }
- 
- .work div {
-    background-color: var(--grey);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-    height: 20rem;
-    width: 29rem;
- }
-
- .work div img{
-    width: 100%;
-    border-radius: 1rem;
- }
- 
- .work p {
-    margin-top: 1rem;
-    padding-left: 0.5rem;
-    font-weight: 500;
- }
- 
 /* ------- Footer Section ------------------------------------------------------------------------*/
 footer{
     background-color: var(--black);
@@ -337,6 +238,278 @@ footer{
     text-decoration: underline;
 }
 
+@media (max-width: 600px){
+    footer{
+        height: 5.5rem;
+    }
+
+    #nav2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 0;
+        column-gap: 1rem;
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+        margin: 0;
+    }
+
+    #nav2 ul li a {
+        font-size: 8pt;
+    }
+
+    .footer-logo img {
+        width: 2.2rem;
+        height: auto;
+    }
+
+    .footer-content{
+        display: flex;
+        gap: 1.5rem;
+        text-align: left;
+        align-items: center;
+    }
+
+    .tamara-glass-image img{
+        height: 3rem;
+    }
+    
+    .maggie-glass-image img {
+        height: 2.2rem;
+    }
+}
+
+/* ------- Home Section ------------------------------------------------------------------------*/
+.hero {
+    position: relative;
+    margin-top: 4.7rem;
+    width: 100vw;
+    height: calc(100vh - 4.5rem);
+    background: url('Images/Landing\ page.png') lightgray -130.393px -1961.419px / 127.287% 439.355% no-repeat;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+ 
+.scroll {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+ 
+.background-rectangles {
+    padding-top: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    width: calc(100% * 2);
+    animation: scroll-background 50s linear infinite;
+}
+ 
+.background-rectangles div {
+    width: 18rem;
+    height: 12.1rem;
+    background-color: var(--grey);
+    border-radius: 1.2rem;
+    padding: 0px;
+    border: 1.5px solid #000;
+}
+ 
+.background-rectangles img {
+    width: 100%;
+    border-radius: 1rem;
+}
+ 
+@keyframes scroll-background {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.about{
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.about p {
+    column-count: 2;
+    column-gap: 2rem; 
+}
+   
+.services {
+    width: 100vw;
+    padding-top: 4rem;
+    padding-left: 4.5rem;
+    padding-bottom: 3.5rem;
+    padding-right: 2.5rem;
+    background: var(--black);
+}
+
+.services h1{
+    color: var(--white);
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.service {
+    background: white;
+    width: 28vw; 
+    flex-shrink: auto; 
+    scroll-snap-align: start; 
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio {
+    width: 100vw;
+    padding-top: 4rem;
+    padding-left: 4.5rem;
+    padding-bottom: 3rem;
+}
+ 
+.works {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 10px;
+    align-items: left;
+    gap: 3rem;
+    padding-right: 3rem;
+}
+ 
+.work {
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-shrink: auto; 
+    scroll-snap-align: start;
+}
+ 
+.work div {
+    background-color: var(--grey);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    height: 20rem;
+    width: 29rem;
+}
+
+.work div img{
+    width: 100%;
+    border-radius: 1rem;
+}
+ 
+.work p {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 600px){
+    .hero {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        background: url('Images/Landing\ page.png');
+        background-position: 0.2rem;
+        height: 46rem;
+        margin-right: 0;
+    }
+
+    .background-rectangles {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1.5rem;
+    }
+
+    .background-rectangles div {
+        width: 9rem;
+        height: 6rem;
+    }
+     
+    .background-rectangles img {
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+
+    .about{
+        margin-left: 2.5rem;
+        margin-right: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .about p {
+        column-count: 1;
+        font-size: 12pt;
+        line-height: 2.1rem;
+    }
+
+    .about h1{
+        margin-bottom: 1.5rem;
+    }
+
+    .services {
+        padding-left: 2.5rem;
+        padding-right: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .service-cards {
+        display: block;
+    }
+
+    .service {
+        background: white;
+        width: 75vw;
+        margin-bottom: 2.5rem;
+        padding-top: 1.6rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .service h3{
+        font-size: 18pt;
+        margin-bottom: 1rem;
+    }
+
+    .service p{
+        font-size: 12pt;
+        line-height: 2.2rem;
+    }
+
+    .portfolio {
+        padding-left: 2.5rem;
+        padding-top: 3rem;
+    }
+
+    .works {
+        padding-bottom: 0px;
+        align-items: left;
+        gap: 1.5rem;
+        padding-right: 3rem;
+    }
+
+    .work div {
+        height: auto;
+        width: 15rem;
+    }
+}
+
 /* ------- Portfolio Section ------------------------------------------------------------------------*/
 .main-work{
     margin-top: 6.5rem;
@@ -409,6 +582,19 @@ footer{
     border-radius: 0.9rem;
 }
 
+@media (max-width: 600px){
+    .main-work{
+        margin-left: 2.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .main-work h1{
+        margin-top: 4.5rem;
+    }
+
+
+}
+
 /* ------- About Section ------------------------------------------------------------------------*/
 .main-about{
     background: url(Images/About\ us\ background.png);
@@ -447,8 +633,12 @@ footer{
     max-width: 35rem;
 }
 
-a.text p{
+.atext p{
     font-size: 15pt;
+}
+
+.slogan{
+    font-weight: 600;
 }
 
 .aimages-container {
@@ -468,6 +658,59 @@ a.text p{
     width: 100%;
     border-radius: 1rem;
     object-fit: cover;
+}
+
+@media (max-width: 600px){
+    .main-about{
+        background-size: cover;
+        padding-top: 4.2rem;
+        background-position: center;
+    }
+
+    .about-content{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .about-content video{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .abottomsection {
+        display: block;
+        margin-top: 1.3rem;
+        margin-left: 2.5rem;
+        margin-right: 2rem;
+    }
+
+    .atext {
+        width: 15rem;
+    }
+
+    .atext p{
+        font-size: 12pt;
+        line-height: 2.1rem;
+    }
+
+    .aimages-container {
+        margin-top: 2.5rem;
+        padding: 0rem;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .aimages{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .aimages-container img {
+        border-radius: 0.5rem;
+    }
 }
 
 /* ------- Team Section ------------------------------------------------------------------------*/
@@ -496,7 +739,7 @@ a.text p{
     font-family: 'Giphurs Bold';
 }
 
-.people {
+.people{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5.5rem;
@@ -507,7 +750,7 @@ a.text p{
     margin-bottom: 6rem;
 }
 
-.person {
+.person{
     background: var(--white);
     padding-top: 2.2rem;
     padding-left: 2.2rem;
@@ -548,6 +791,53 @@ a.text p{
 .person:nth-child(4):hover img { content: url("Images/maggie_glass.png"); }
 .person:nth-child(5):hover img { content: url("Images/nick.glass.png"); }
 .person:nth-child(6):hover img { content: url("Images/tamara_glass.png"); }
+
+@media (max-width: 600px){
+    .main-team{
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content{
+        margin-top: 6rem;
+        margin-left: -2rem;
+    }
+
+    .people{
+        display: block;
+        margin-bottom: 5rem;   
+    }
+
+    .person{
+        margin-bottom: 2rem;
+        padding-top: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        width: 75vw;
+        padding-bottom: 1.5rem;
+    }
+
+    .person img {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .person h2{
+        font-size: 20pt;
+        margin-top: 1.2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .person p{
+        font-size: 11pt;
+        line-height: 1.9rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem; 
+        text-align: left; 
+    }
+}
 
 /* ------- Contact Section ------------------------------------------------------------------------*/
 .main-contact{
@@ -599,4 +889,56 @@ a.text p{
 .main-contact p{
     margin-top: 0.3rem;
     margin-bottom: 0.1rem;
+}
+
+@media (max-width: 600px){
+    .main-contact{
+        margin-left: 2.5rem;
+    }
+
+    .main-contact h1{
+        padding-top: 6rem;
+    }
+
+    .main-contact h2{
+        font-size: 15pt;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+    }
+
+    .icons{
+        margin-bottom: 2.5rem;
+        gap: 1.5rem;
+    }
+
+    .icons img{
+        width: 2.5rem;
+    }
+
+    .main-contact h3{
+        font-size: 13pt;
+        font-family: 'Giphurs Bold';
+        margin-bottom: 0.5rem;
+    }
+
+    .main-contact p{
+        font-size: 11.5pt;
+        font-weight: 300;
+        padding: 0rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .object{
+        position: relative;
+    }
+    
+    .object img{
+        height: 27rem;
+        margin-left: 0rem;
+        margin-top: 35rem;
+        margin-bottom: 0;
+        top: -12rem;
+        left: -7rem;
+    }
 }
