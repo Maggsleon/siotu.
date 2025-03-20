@@ -24,28 +24,45 @@
     </header>
     
     <section class="hero">
-        <div class="background-rectangles">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="scroll">
+            <div class="background-rectangles">
+                <div><img src="Images/grid1.png" alt="grid1"></div>
+                <div><img src="Images/grid4.png" alt="grid4"></div>
+                <div><img src="Images/grid7.png" alt="grid7"></div>
+                <div><img src="Images/grid10.png" alt="grid10"></div>
+                <div><img src="Images/grid13.png" alt="grid13"></div>
+                <div><img src="Images/grid16.png" alt="grid16"></div>
+                <div><img src="Images/grid2.png" alt="grid2"></div>
+                <div><img src="Images/grid5.png" alt="grid5"></div>
+                <div><img src="Images/grid8.png" alt="grid8"></div>
+                <div><img src="Images/grid11.png" alt="grid11"></div>
+                <div><img src="Images/grid14.png" alt="grid14"></div>
+                <div><img src="Images/grid17.png" alt="grid17"></div>   
+                <div><img src="Images/grid3.png" alt="grid3"></div>
+                <div><img src="Images/grid6.png" alt="grid6"></div>
+                <div><img src="Images/grid9.png" alt="grid9"></div>
+                <div><img src="Images/grid12.png" alt="grid12"></div>
+                <div><img src="Images/grid15.png" alt="grid15"></div>
+                <div><img src="Images/grid18.png" alt="grid18"></div>
+            </div>
         </div>
     </section>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+           const container = document.querySelector(".background-rectangles");
+           const images = [...container.children];
+        
+           images.forEach(img => {
+               const clone = img.cloneNode(true);
+               container.appendChild(clone);
+           });
+        });
+    </script>
+
     <section id="about" class="about">
         <h1>about siotu.</h1>
-        <p> siotu. is built on transparency, reflected in both our name and design philosophy. Inspired by SiO₂, the chemical formula for glass, we strive for clarity and honesty in our work and client relationships. Our diverse team of young, driven designers brings fresh perspectives and adaptable leadership to create well-rounded solutions. With an open and collaborative approach, we ensure our process, team, and decisions are always accessible. Just like glass, we make design clear, open, and easy to engage with.</p>
+        <p> Siotu. is built on transparency, reflected in both our name and design philosophy. Inspired by SiO₂, the chemical formula for glass, we strive for clarity and honesty in our work and client relationships. Our diverse team of young, driven designers brings fresh perspectives and adaptable leadership to create well-rounded solutions. With an open and collaborative approach, we ensure our process, team, and decisions are always accessible. Just like glass, we make design clear, open, and easy to engage with.</p>
     </section>
 
     <section id="services" class="services">
@@ -82,47 +99,47 @@
         <h1>portfolio.</h1>
         <div class="works">
             <div class="work">
-                <div></div>
-                <p>Title</p>
+                <div><img src="Images/editorial lp.png" alt="editorialwork"></div>
+                <p>editorial.</p>
             </div>
             <div class="work">
-                <div></div>
-                <p>Title</p>
+                <div><img src="Images/Packaging lp.png" alt=""></div>
+                <p>packaging.</p>
             </div>
             <div class="work">
-                <div></div>
-                <p>Title</p>
+                <div><img src="Images/ad lp.png" alt=""></div>
+                <p>advertisement.</p>
             </div>
             <div class="work">
-                <div></div>
-                <p>Title</p>
+                <div><img src="Images/analogue lp.png" alt=""></div>
+                <p>analogue work.</p>
             </div>
         </div>
     </section>
     
     <footer>
-       <div class="maggie-glass-image">
-        <img src="Images/maggie_glass.png" alt=""> 
-       </div>
-       <div class="tamara-glass-image">
-        <img src="Images/tamara_glass.png" alt=""> 
-       </div>
-       <div class="footer-content">
-        <div class="footer-logo">
-            <a href="/index.html" data-drupal-link-system-path="node/0">
-                <img src="Images/Logo White.png" alt="">
-            </a>
+        <div class="maggie-glass-image">
+         <img src="Images/maggie_glass.png" alt=""> 
         </div>
-        <nav id="nav2">
-            <ul>
-                <li><a href="/index.html" data-drupal-link-system-path="node/0">home</a></li>
-                <li><a href="/work.html" data-drupal-link-system-path="node/1">portfolio</a></li>
-                <li><a href="/about.html" data-drupal-link-system-path="node/2">about us</a></li>
-                <li><a href="/team.html" data-drupal-link-system-path="node/3">team</a></li>
-                <li><a href="/contact.html" data-drupal-link-system-path="node/4">contact us</a></li>
-            </ul>
-        </nav>
-       </div>
-    </footer>
+        <div class="tamara-glass-image">
+         <img src="Images/tamara_glass.png" alt=""> 
+        </div>
+        <div class="footer-content">
+         <div class="footer-logo">
+             <a href="/index.html" data-drupal-link-system-path="node/0">
+                 <img src="Images/Logo White.png" alt="">
+             </a>
+         </div>
+         <nav id="nav2">
+             <ul>
+                 <li><a href="/index.html" data-drupal-link-system-path="node/0">home</a></li>
+                 <li><a href="/work.html" data-drupal-link-system-path="node/1">portfolio</a></li>
+                 <li><a href="/about.html" data-drupal-link-system-path="node/2">about us</a></li>
+                 <li><a href="/team.html" data-drupal-link-system-path="node/3">team</a></li>
+                 <li><a href="/contact.html" data-drupal-link-system-path="node/4">contact us</a></li>
+             </ul>
+         </nav>
+        </div>
+     </footer>
 </body>
 </html>
